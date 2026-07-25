@@ -194,8 +194,8 @@ export function InvitationInner({ invitation }: Props) {
 
       {/* Details — stacks on phone, side-by-side on desktop */}
       <section className="relative z-10 mx-auto w-full max-w-5xl px-5 pb-4 pt-2 sm:px-8 lg:px-10 lg:pt-6">
-        <div className="mx-auto flex w-full max-w-[280px] flex-col items-stretch gap-4 sm:max-w-[320px] md:max-w-[360px] lg:max-w-none lg:flex-row lg:items-start lg:justify-center lg:gap-8 xl:gap-12">
-          <div className="flex w-full flex-col gap-3 lg:max-w-[380px] lg:flex-1">
+        <div className="mx-auto flex w-full max-w-[320px] flex-col items-stretch gap-4 sm:max-w-[360px] md:max-w-[400px] lg:max-w-none lg:flex-row lg:items-start lg:justify-center lg:gap-8 xl:gap-12">
+          <div className="flex w-full flex-col gap-3 lg:max-w-[400px] lg:flex-1">
             <article className="relative flex flex-col items-center overflow-hidden rounded-t-[999px] bg-[#86a076] px-4 pb-6 pt-9 text-center text-white shadow-[0_14px_32px_rgba(58,47,40,0.14)] sm:px-6 sm:pb-7 sm:pt-10 md:px-7 md:pb-8 md:pt-12">
               <div
                 className="pointer-events-none absolute inset-0 opacity-[0.12]"
@@ -256,7 +256,7 @@ export function InvitationInner({ invitation }: Props) {
                   </div>
                 ) : null}
 
-                <p className="mt-4 mb-0 max-w-[220px] text-[0.52rem] font-semibold uppercase leading-relaxed tracking-[0.14em] text-white/92 sm:mt-5 sm:max-w-[260px] sm:text-[0.58rem]">
+                <p className="mt-4 mb-0 max-w-[240px] text-[0.52rem] font-semibold uppercase leading-relaxed tracking-[0.14em] text-white/92 sm:mt-5 sm:max-w-[280px] sm:text-[0.58rem]">
                   We joyfully announce the wedding of our children
                 </p>
 
@@ -276,7 +276,7 @@ export function InvitationInner({ invitation }: Props) {
                   The bride
                 </p>
 
-                <p className="mt-4 mb-0 max-w-[230px] text-[0.55rem] font-semibold uppercase leading-relaxed tracking-[0.12em] sm:mt-5 sm:max-w-[280px] sm:text-[0.62rem]">
+                <p className="mt-4 mb-0 max-w-[260px] text-[0.55rem] font-semibold uppercase leading-relaxed tracking-[0.12em] sm:mt-5 sm:max-w-[300px] sm:text-[0.62rem]">
                   Wedding ceremony at {invitation.churchVenue || 'the ceremony venue'}
                 </p>
 
@@ -313,7 +313,7 @@ export function InvitationInner({ invitation }: Props) {
 
           <div
             id="guest-ticket"
-            className="w-full overflow-hidden rounded-[16px] bg-white shadow-[0_20px_48px_rgba(58,47,40,0.12)] sm:rounded-[18px] lg:max-w-[380px] lg:flex-1 lg:self-stretch"
+            className="w-full overflow-hidden rounded-[16px] bg-white shadow-[0_20px_48px_rgba(58,47,40,0.12)] sm:rounded-[18px] lg:max-w-[400px] lg:flex-1 lg:self-stretch"
           >
             <div className="bg-olive px-5 py-7 text-center text-white sm:px-6 sm:py-8">
               <p className="mb-1.5 mt-0 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/75">
