@@ -7,6 +7,7 @@ import {
   partnerFirstName,
   type PublicInvitation,
 } from './invitation';
+import { WeddingCountdown } from './WeddingCountdown';
 
 const PHOTOS = {
   left: '/IMG_9369s.jpg',
@@ -192,8 +193,10 @@ export function InvitationInner({ invitation }: Props) {
         </div>
       </section>
 
+      <WeddingCountdown eventDate={invitation.eventDate} eventTime={invitation.eventTime} />
+
       {/* Details — stacks on phone, side-by-side on desktop */}
-      <section className="relative z-10 mx-auto w-full max-w-5xl px-5 pb-4 pt-2 sm:px-8 lg:px-10 lg:pt-6">
+      <section className="relative z-10 mx-auto w-full max-w-5xl px-5 pb-4 pt-8 sm:px-8 lg:px-10 lg:pt-10">
         <div className="mx-auto flex w-full max-w-[320px] flex-col items-stretch gap-4 sm:max-w-[360px] md:max-w-[400px] lg:max-w-none lg:flex-row lg:items-start lg:justify-center lg:gap-8 xl:gap-12">
           <div className="flex w-full flex-col gap-3 lg:max-w-[400px] lg:flex-1">
             <article className="relative flex flex-col items-center overflow-hidden rounded-t-[999px] bg-[#86a076] px-4 pb-6 pt-9 text-center text-white shadow-[0_14px_32px_rgba(58,47,40,0.14)] sm:px-6 sm:pb-7 sm:pt-10 md:px-7 md:pb-8 md:pt-12">
