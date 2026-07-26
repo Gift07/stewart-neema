@@ -17,7 +17,7 @@ export function CoverView({ invitation, onOpen }: Props) {
       <CoverAmbient />
 
       <div className="relative z-10 flex w-full max-w-[420px] flex-col items-center gap-5">
-        <p className="animate-cover-in relative z-30 m-0 max-w-[280px] text-center text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-olive/70">
+        <p className="animate-cover-in relative z-30 m-0 max-w-[300px] text-center text-[0.82rem] font-semibold uppercase tracking-[0.28em] text-olive/70">
           A note for {guest}
         </p>
 
@@ -42,7 +42,7 @@ export function CoverView({ invitation, onOpen }: Props) {
             </svg>
           </div>
 
-          <h1 className="relative z-[2] m-0 font-serif text-[clamp(2.4rem,8vw,3.1rem)] font-medium leading-[1.05] tracking-[-0.02em] text-ink">
+          <h1 className="relative z-[2] m-0 font-serif text-[clamp(2.7rem,9vw,3.4rem)] font-medium leading-[1.05] tracking-[-0.02em] text-ink">
             <span className="block">{one}</span>
             <span className="my-[0.08em] block text-[0.72em] text-olive-soft">&</span>
             <span className="block">{two}</span>
@@ -64,21 +64,21 @@ export function CoverView({ invitation, onOpen }: Props) {
             <span className="h-px flex-1 bg-olive/35" />
           </div>
 
-          <p className="relative z-[2] m-0 font-serif text-[1.15rem] text-ink">{event.longDate}</p>
-          <p className="relative z-[2] mt-2.5 mb-0 font-serif text-[1.05rem] italic text-muted">
+          <p className="relative z-[2] m-0 font-serif text-[1.3rem] text-ink">{event.longDate}</p>
+          <p className="relative z-[2] mt-2.5 mb-0 font-serif text-[1.15rem] italic text-muted">
             Cordially Invites
           </p>
 
           <button
             type="button"
-            className="relative z-30 mt-9 min-h-[46px] min-w-[148px] cursor-pointer rounded-[10px] border-0 bg-olive font-semibold tracking-[0.04em] text-white transition duration-180 hover:-translate-y-px hover:bg-[#4f5d3b] active:translate-y-0"
+            className="relative z-30 mt-9 min-h-[50px] min-w-[160px] cursor-pointer rounded-[10px] border-0 bg-olive text-[1.05rem] font-semibold tracking-[0.04em] text-white transition duration-180 hover:-translate-y-px hover:bg-[#4f5d3b] active:translate-y-0"
             onClick={onOpen}
           >
             Open
           </button>
         </article>
 
-        <p className="animate-cover-in relative z-30 m-0 max-w-[300px] text-center font-serif text-[0.98rem] italic leading-relaxed text-olive/75">
+        <p className="animate-cover-in relative z-30 m-0 max-w-[320px] text-center font-serif text-[1.08rem] italic leading-relaxed text-olive/75">
           Open your invitation to see ceremony details, your reserved seats, and entry QR code.
         </p>
       </div>

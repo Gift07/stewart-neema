@@ -34,11 +34,11 @@ function calcRemaining(targetMs: number): Remaining {
 
 function Unit({ value, label }: { value: number; label: string }) {
   return (
-    <div className="flex min-w-[3.25rem] flex-col items-center sm:min-w-[4rem] md:min-w-[4.75rem]">
-      <span className="font-serif text-[1.65rem] font-semibold leading-none tracking-wide text-[#4a3728] tabular-nums sm:text-[2.15rem] md:text-[2.6rem]">
+    <div className="flex min-w-[3.5rem] flex-col items-center sm:min-w-[4.25rem] md:min-w-[5rem]">
+      <span className="font-serif text-[1.9rem] font-semibold leading-none tracking-wide text-[#4a3728] tabular-nums sm:text-[2.4rem] md:text-[2.85rem]">
         {value}
       </span>
-      <span className="mt-1.5 font-serif text-[0.72rem] tracking-wide text-[#4a3728]/sm:text-[0.85rem] sm:mt-2">
+      <span className="mt-1.5 font-serif text-[0.82rem] tracking-wide text-[#4a3728] sm:mt-2 sm:text-[0.95rem]">
         {label}
       </span>
     </div>
@@ -48,7 +48,7 @@ function Unit({ value, label }: { value: number; label: string }) {
 function Colon() {
   return (
     <span
-      className="mb-5 self-center font-serif text-[1.35rem] font-semibold leading-none text-[#4a3728] sm:mb-6 sm:text-[1.75rem] md:text-[2rem]"
+      className="mb-5 self-center font-serif text-[1.5rem] font-semibold leading-none text-[#4a3728] sm:mb-6 sm:text-[1.9rem] md:text-[2.2rem]"
       aria-hidden
     >
       :
@@ -122,7 +122,7 @@ export function WeddingCountdown({ eventDate, eventTime }: Props) {
       <div className="relative mx-auto flex max-w-3xl flex-col items-center text-[#4a3728]">
         <div className="flex w-full max-w-md items-center gap-3 sm:max-w-lg sm:gap-4">
           <span className="h-px flex-1 bg-[#4a3728]/40" aria-hidden />
-          <p className="m-0 shrink-0 font-script text-[1.85rem] leading-none sm:text-[2.35rem] md:text-[2.6rem]">
+          <p className="m-0 shrink-0 font-script text-[2.1rem] leading-none sm:text-[2.6rem] md:text-[2.9rem]">
             Just
           </p>
           <span className="h-px flex-1 bg-[#4a3728]/40" aria-hidden />
@@ -137,7 +137,7 @@ export function WeddingCountdown({ eventDate, eventTime }: Props) {
           ))}
         </div>
 
-        <p className="mt-6 mb-0 font-script text-[1.55rem] leading-none sm:mt-8 sm:text-[2rem] md:text-[2.25rem]">
+        <p className="mt-6 mb-0 font-script text-[1.75rem] leading-none sm:mt-8 sm:text-[2.25rem] md:text-[2.5rem]">
           {remaining.done ? 'We Are Married' : 'Until We Get Married'}
         </p>
       </div>

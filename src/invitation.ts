@@ -72,10 +72,10 @@ export function createDummyInvitation(): PublicInvitation {
     partnerOne: 'Stewart Adam Makuchilo',
     partnerTwo: 'Neema Amani Moshi',
     eventDate: '2026-08-01',
-    eventTime: '14:00:00',
+    eventTime: '13:00:00',
     receptionTime: '17:00:00',
-    churchVenue: 'Jumba',
-    receptionVenue: 'Banola Hall',
+    churchVenue: "Kingdom Hall of Jehovah's Witnesses, Kunduchi",
+    receptionVenue: 'Banora Hall',
     // Two columns when formatted as "left || right" (newlines or ; inside each side)
     contactName: 'Mr. & Mrs.\nMakuchilo Family || Mr. & Mrs.\nMoshi Family',
     contactPhone: '',
