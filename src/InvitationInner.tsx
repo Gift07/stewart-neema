@@ -38,8 +38,13 @@ function MapPinIcon({ className = 'mt-0.5 size-4 shrink-0 text-ink/70' }: { clas
   );
 }
 
-const CEREMONY_MAP_URL = 'https://maps.app.goo.gl/87yR51MqrNAa72yQ9';
+const CEREMONY_MAP_URL = 'https://maps.app.goo.gl/91Zr8uQ1SnUAUssE7';
 const RECEPTION_MAP_URL = 'https://maps.app.goo.gl/mBpkfdR2hTHCjbAu9';
+const CONTACT_PHONE = '+255 620 360 999';
+
+function phoneTelHref(phone: string) {
+  return `tel:${phone.replace(/[^\d+]/g, '')}`;
+}
 
 type HostSide = {
   key: string;
@@ -86,6 +91,8 @@ export function InvitationInner({ invitation }: Props) {
   const saveTheDate = `${event.day} ${event.month} ${event.year}`.toUpperCase();
   const monthShort = (event.month || '').slice(0, 3).toUpperCase();
   const hostColumns = parseHostColumns(invitation.contactName);
+  const contactPhone = invitation.contactPhone?.trim() || CONTACT_PHONE;
+  const contactTelHref = phoneTelHref(contactPhone);
   const [rsvpChoice, setRsvpChoice] = useState<'accept' | 'love' | null>(null);
   const [rsvpSent, setRsvpSent] = useState(false);
 
@@ -293,13 +300,15 @@ export function InvitationInner({ invitation }: Props) {
                     <p className="m-0 font-serif text-[0.92rem] leading-snug sm:text-[1.05rem]">
                       {invitation.contactName.trim()}
                     </p>
-                    {invitation.contactPhone?.trim() ? (
-                      <p className="mt-1 mb-0 text-[0.8rem] text-white/75 sm:text-[0.88rem]">
-                        {invitation.contactPhone.trim()}
-                      </p>
-                    ) : null}
                   </div>
                 ) : null}
+
+                <a
+                  href={contactTelHref}
+                  className="mt-3 mb-0 inline-flex items-center justify-center text-[0.88rem] font-semibold tracking-[0.04em] text-white underline decoration-white/50 underline-offset-4 sm:text-[0.95rem]"
+                >
+                  {contactPhone}
+                </a>
 
                 <p className="mt-5 mb-0 max-w-[260px] text-[0.88rem] font-semibold uppercase leading-relaxed tracking-[0.14em] text-white/92 sm:max-w-[300px] sm:text-[0.92rem]">
                   We joyfully announce the wedding of our children

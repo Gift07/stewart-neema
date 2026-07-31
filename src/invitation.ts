@@ -78,7 +78,7 @@ export function createDummyInvitation(): PublicInvitation {
     receptionVenue: 'Banora Hall',
     // Two columns when formatted as "left || right" (newlines or ; inside each side)
     contactName: 'Mr. & Mrs.\nMakuchilo Family || Mr. & Mrs.\nMoshi Family',
-    contactPhone: '',
+    contactPhone: '+255 620 360 999',
     guestId: '00000000-0000-0000-0000-000000000000',
     guestTitle: 'Ms.',
     guestName: 'Grace Mushi',
